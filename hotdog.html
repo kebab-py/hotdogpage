@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+#container {
+    position:relative;
+}
+
+#pickles {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    display: none;
+}
+#ketchup {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    display: none;
+}
+#mustard {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    display: none;
+}
+
+
+</style>
+    <button type="button"
+		onclick="pickles()" id="btnID1">
+		pickles
+	</button>
+        <button type="button"
+		onclick="ketchup()" id="btnID2">
+		ketchup
+	</button>
+            <button type="button"
+		onclick="mustard()" id="btnID3">
+		mustard
+	</button>
+<div id="container">
+    <img width="700px" src="https://github.com/kebab-py/hotdogpage/blob/main/hotdog.png?raw=true" id="img1" />
+    <img width="700px" src="https://github.com/kebab-py/hotdogpage/blob/main/pickle.png?raw=true" id="pickles" />
+    <img width="700px" src="https://github.com/kebab-py/hotdogpage/blob/main/ketchup.png?raw=true" id="ketchup" />
+    <img width="700px" src="https://github.com/kebab-py/hotdogpage/blob/main/mustard.png?raw=true" id="mustard" />
+</div>
+	<script>
+		function pickles() {
+			document.getElementById('pickles')
+					.style.display = "block";}
+	</script>
+	<script>
+		function ketchup() {
+			document.getElementById('ketchup')
+					.style.display = "block";}
+	</script>
+	<script>
+		function mustard() {
+			document.getElementById('mustard')
+					.style.display = "block";}
+	</script>
+
+</body>
+</html>
